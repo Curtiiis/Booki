@@ -1,0 +1,112 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+    /********************************************************************/
+    /************************** ANIMATIONS ******************************/
+    /********************************************************************/
+
+
+/************************************************/
+/************* SECTION 1 - HEADER ***************/
+/************************************************/
+
+  /***** TRANSITIONS *****/
+  .header-nav-item,
+  .header-nav-item::before{
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  
+  .toggle,
+  .toggle-label,
+  .toggle-round,
+  .toggle-txt{
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  
+  /***** CHANGEMENTS LORS DE L'ANIMATION *****/
+
+  /*** Menu ***/
+  .header-nav-item:hover{
+    color: var(--clr-primary);
+  }
+  .header-nav-item:hover:before{
+    width: 100%;
+  }
+
+  /*** Searchbar ***/
+  .search-btn:hover,
+  .fa-search:hover{
+      -webkit-filter: brightness(1.1);
+              filter: brightness(1.1);
+  }
+
+  /*** Filtres ***/
+  .toggle:hover{
+    background-color: var(--clr-hover);
+  }
+
+
+  .filter-toggle:checked ~ .toggle-label{
+    color: #fff;
+    background-color: var(--clr-primary);
+  }
+  
+  /** Animation texte - Déplacement en X **/
+  .filter-toggle:checked ~ .toggle-label .toggle-txt{-webkit-transform: var(--trans-txt);-ms-transform: var(--trans-txt);transform: var(--trans-txt)}
+  
+  /** Animation Button 1 **/
+  #filter-toggle-1:checked ~ .toggle-label #toggle-round-1{-webkit-transform: var(--trans-round1);-ms-transform: var(--trans-round1);transform: var(--trans-round1)}
+  
+  /** Animation Button 2 **/
+  #filter-toggle-2:checked ~ .toggle-label #toggle-round-2{-webkit-transform: var(--trans-round2);-ms-transform: var(--trans-round2);transform: var(--trans-round2)}
+  
+  /** Animation Button 3 **/
+  #filter-toggle-3:checked ~ .toggle-label #toggle-round-3{-webkit-transform: var(--trans-round3);-ms-transform: var(--trans-round3);transform: var(--trans-round3)}
+  
+  /** Animation Button 4 **/
+  #filter-toggle-4:checked ~ .toggle-label #toggle-round-4{-webkit-transform: var(--trans-round4);-ms-transform: var(--trans-round4);transform: var(--trans-round4)}
+  
+
+
+
+    
+/************************************************/
+/************** SECTTION 2 - MAIN ***************/
+/************************************************/
+
+.main-cards{
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.main-cards:hover{
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 10px #0007;
+            box-shadow: 0 0 10px #0007;
+}
+.homes-more-link:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/**********************************************/
+/************ SECTTION 3 - FOOTER *************/
+/**********************************************/
+.footer-links:hover{
+    opacity: .8;
+}
+    

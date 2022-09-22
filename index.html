@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- IMPORT FONTS -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,900&display=swap');
+        </style>   
+        
+        <!-- INITIALISATION FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/6dd7ccfc27.js" crossorigin="anonymous" ></script>
+
+        <!-- IMPORT CSS BASE -->
+        <link rel="stylesheet" href="css/base/normalize.css">    
+        <link rel="stylesheet" href="css/base/style.css">        
+        <link rel="stylesheet" href="css/base/variables.css">    
+        <link rel="stylesheet" href="css/base/fonts.css">        
+        <link rel="stylesheet" href="css/base/animations.css">   
+
+        <!-- IMPORT CSS SECTIONS -->
+        <link rel="stylesheet" href="css/sections/header.css">       
+        <link rel="stylesheet" href="css/sections/main.css">        
+        <link rel="stylesheet" href="css/sections/footer.css">       
+
+        <!-- IMPORT CSS RESPONSIVE -->
+        <link rel="stylesheet" href="css/responsive/media-tablet.css"> 
+        <link rel="stylesheet" href="css/responsive/media-mobile.css"> 
+
+        <!-- TITRE DE LA PAGE -->
+        <title>Booki</title>
+
+    </head>
+
+
+    <body>
+
+        <!-- SECTION 1 - HEADER -->
+        <header class="header"> 
+
+            <!-- SECTION 1.1 - TOPBAR -->
+            <section class="header-topbar">
+
+                <!-- HEADER - Logo -->
+                <div>
+                    <a href="#" class="header-logo-link">
+                        <img src="images/logo/booki.png" srcset="images/logo/booki.png" alt="Logo Booki">
+                    </a>
+                </div>
+
+                <!-- HEADER - Menu -->
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-nav-item" id="nav-active">
+                            <a class="header-nav-a" href="#hebergements">Hébergements</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-a" href="#activites">Activités</a>
+                        </li>
+                    </ul>
+                </nav>
+               
+            </section>
+            
+            <!-- HEADER - Barre grise -->
+            <!-- <span class="greybar"></span> -->
+
+            <!-- SECTION 1.2 - Search -->
+            <section class="search">
+
+                <!-- SEARCH - Container -->
+                <div class="search-container">
+
+                <!-- SEARCH - Description -->
+                <div class="search-description">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2>En plein centre ville ou en pleine nature</h2>
+                </div>
+
+                <!-- SEARCH - Searchbar -->
+                <div class="search-searchbar">
+                    <form class="search-form">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" name="search" placeholder="Ville, PAYS" class="search-txt">
+                        <button type="submit" name="search-btn" class="search-btn">Rechercher</button>
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+
+                <!-- SEARCH - Filtres -->
+                <div class="toggle-box">
+
+                    <!-- Filtres - Titre -->
+                    <p>Filtres</p>
+                
+                    <!-- Filtres - Container des buttons -->
+                    <div class="toggle-buttons">
+            
+                        <!-- Filtres - Button 1 -->
+                        <div class="toggle" id="toggle-1">
+                            <input class="filter-toggle" type="checkbox" id="filter-toggle-1">
+                            <label class="toggle-label" for="filter-toggle-1">
+                                <span class="toggle-round" id="toggle-round-1"></span>
+                                <span class="toggle-txt">Économique</span>
+                            </label>
+                        </div>
+                
+                        <!-- Filtres - Button 2 -->
+                        <div class="toggle" id="toggle-2">
+                            <input class="filter-toggle" type="checkbox" id="filter-toggle-2">
+                            <label class="toggle-label" for="filter-toggle-2">
+                                <span class="toggle-round" id="toggle-round-2"></span>
+                                <span class="toggle-txt">Familial</span>
+                            </label>
+                        </div>
+                        
+                        <!-- Filtres - Button 3 -->
+                        <div class="toggle" id="toggle-3">
+                            <input class="filter-toggle" type="checkbox" id="filter-toggle-3">
+                            <label class="toggle-label" for="filter-toggle-3">
+                                <span class="toggle-round" id="toggle-round-3"></span>
+                                <span class="toggle-txt">Romantique</span>
+                            </label>
+                        </div>
+                        
+                        <!-- Filtres - Button 4 -->
+                        <div class="toggle" id="toggle-4">
+                            <input class="filter-toggle" type="checkbox" id="filter-toggle-4">
+                            <label class="toggle-label" for="filter-toggle-4">
+                                <span class="toggle-round" id="toggle-round-4"></span>
+                                <span class="toggle-txt">Animaux autorisés</span>
+                            </label>
+                        </div>
+            
+                    </div> <!-- close Container des buttons -->
+                
+                </div> <!-- close Toggle-box -->
+            
+
+                <!-- SEARCH - Info -->
+                <div class="search-info">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+
+                </div>
+
+            </section> <!-- close search -->
+
+        </header> <!-- close header -->
+
+
+        <!-- SECTION 2 - MAIN -->
+        <main class="main" id="hebergements">
+
+            <!-- SECTION 2.1 - Container Homes et Popular -->
+            <div class="container-hp">
+
+                <!-- HOMES - Grande Card -->
+                <div class="card-hp card-homes">
+
+                    <!-- HOMES - Titre -->
+                    <div class="card-title">
+                        <h1 class="main-h1">Hébergements à Marseille</h1>
+                    </div>
+
+                    <!-- HOMES - Container des petites cards -->
+                    <div class="hp-cards-wrapper homes-cards-wrapper">
+
+                        <!-- HOMES - CARD 1 -->
+                        <div class="main-cards homes-cards">
+                            <a class="main-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/1/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/1/tablet.jpg 2x">
+                                    <img class="main-img" src="images/homes/1/desktop.jpg"  alt="Image d'une chambre à l'Auberge La Cannebière">  
+                                </picture>  
+
+                                <!-- CARD DESCRIPTION -->                        
+                                <div class="main-cards-content">
+                                    <div>
+                                        <p class="main-cards-title homes-titles">Auberge La Cannebière</p>
+                                        <p class="main-prices">Nuit à partir de <strong>25€</strong></p>
+                                    </div>
+
+                                    <!-- CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                    </div>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <!-- HOMES - CARD 2 -->
+                        <div class="main-cards homes-cards">
+                            <a class="main-links" href="#">
+
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/2/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/2/tablet.jpg 2x">
+                                    <img class="main-img" src="images/homes/2/desktop.jpg"  alt="Image d'une chambre à l'Hôtel du port">  
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content">
+                                    <div>
+                                        <p class="main-cards-title homes-titles">Hôtel du port</p>
+                                        <p class="main-prices">Nuit à partir de <strong>52€</strong></p>
+                                    </div>
+
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- HOMES - CARD 3 -->
+                        <div class="main-cards homes-cards">
+                            <a class="main-links" href="#">
+                                
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/3/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/3/tablet.jpg 2x">
+                                    <img class="main-img" src="images/homes/3/desktop.jpg"  alt="Image d'une chambre à l'Hôtel Les mouettes">  
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content">
+                                    <div>
+                                        <p class="main-cards-title homes-titles">Hôtel Les mouettes</p>
+                                        <p class="main-prices">Nuit à partir de <strong>76€</strong></p>
+                                    </div>
+                                        <!--CARD STARS -->
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star star-grey"></i>
+                                        </div>
+                                    </div>
+
+                            </a>
+                        </div>
+
+                        <!-- HOMES - CARD 4 -->
+                        <div class="main-cards homes-cards">
+                            <a class="main-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/4/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/4/tablet.jpg 2x">
+                                    <img class="main-img" src="images/homes/4/desktop.jpg"  alt="Image d'une chambre à l'Hôtel de la mer">  
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content">
+                                    <div>
+                                        <p class="main-cards-title homes-titles">Hôtel de la mer</p>
+                                        <p class="main-prices">Nuit à partir de <strong>46€</strong></p>
+                                    </div>
+
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- HOMES - CARD 5 -->
+                        <div class="main-cards homes-cards">
+                            <a class="main-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/5/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/5/tablet.jpg 2x">
+                                    <img class="main-img" src="images/homes/5/desktop.jpg"  alt="Image d'une chambre à l'Auberge Le Panier">  
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content">
+                                    <div>
+                                        <p class="main-cards-title homes-titles">Auberge Le Panier</p>
+                                        <p class="main-prices">Nuit à partir de <strong>23€</strong></p>
+                                    </div>
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- HOMES - CARD 6 -->
+                        <div class="main-cards homes-cards">
+                            <a class="main-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/6/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/6/tablet.jpg 2x">
+                                    <img class="main-img" src="images/homes/6/desktop.jpg"  alt="Image d'une chambre à l'Hôtel chez Amina">  
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content">
+                                    <div>
+                                        <p class="main-cards-title homes-titles">Hôtel chez Amina</p>
+                                        <p class="main-prices">Nuit à partir de <strong>96€</strong></p>
+                                    </div>
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div><!-- close homes-cards-wrapper -->
+
+                    <!--HOMES AFFICHER PLUS -->
+                    <div class="homes-more">
+                        <a class="homes-more-link" href="#">Afficher plus</a>
+                    </div>
+
+                </div><!-- close card-homes -->
+
+
+
+
+
+                <!-- POPULAR -->
+
+                <!-- POPULAR - Grande Card -->
+                <div class="card-hp card-pop">
+
+
+                    <!-- POPULAR - Titre -->
+                    <div class="card-title card-pop-title">
+                        <h1 class="main-h1">Les plus populaires</h1>
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    </div>
+
+                    <!-- POPULAR - Container des petites cards -->
+                    <div class="hp-cards-wrapper pop-cards-wrapper">
+
+
+                        <!-- POPULAR - CARD 1 -->
+                        <div class="main-cards pop-cards">
+                            <a class="main-links pop-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture pop-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/7/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/7/tablet.jpg 2x">
+                                    <img class="main-img pop-img" src="images/homes/7/desktop.jpg"  alt="Image d'une chambre à l'Hôtel Le soleil du matin">  
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content pop-content">
+                                    <div>
+                                        <p class="main-cards-title pop-titles">Hôtel Le soleil du matin</p>
+                                        <p class="main-prices">Nuit à partir de <strong>128€</strong></p>
+                                    </div>
+
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- POPULAR - CARD 2 -->
+                        <div class="main-cards pop-cards">
+                            <a class="main-links pop-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture pop-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/8/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/8/tablet.jpg 2x">
+                                    <img class="main-img pop-img" src="images/homes/8/desktop.jpg"  alt="Image d'une chambre d'hôte au Coeur de l'eau">   
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content pop-content">
+                                    <div>
+                                        <p class="main-cards-title pop-titles">Au coeur de l'eau Chambres d'hôtes</p>
+                                        <p class="main-prices">Nuit à partir de <strong>71€</strong></p>
+                                    </div>
+
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- POPULAR - CARD 3 -->
+                        <div class="main-cards pop-cards">
+                            <a class="main-links pop-links" href="#">
+
+                                <!-- CARD IMAGE -->
+                                <picture class="main-picture pop-picture">
+                                    <source media="(max-width: 700px)" srcset="images/homes/9/mobile.jpg 1x">
+                                    <source media="(max-width: 950px)" srcset="images/homes/9/tablet.jpg 2x">
+                                    <img class="main-img pop-img" src="images/homes/9/desktop.jpg"  alt="Image d'une chambre à l'Hôtel Tout bleu et Blanc">    
+                                </picture> 
+                                
+                                <!-- CARD DESCRIPTION --> 
+                                <div class="main-cards-content pop-content">
+                                    <div>
+                                        <p class="main-cards-title pop-titles">Hôtel Tout bleu et Blanc</p>
+                                        <p class="main-prices">Nuit à partir de <strong>68€</strong></p>
+                                    </div>
+
+                                    <!--CARD STARS --> 
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div> <!-- close card-pop-cards -->
+                    
+                </div> <!-- close card-pop -->
+
+            </div> <!-- close container-hp -->
+
+
+ 
+
+
+            <!-- SECTION 2.2 - Container Activities --> 
+            <div class="container-acti" id="activites">
+
+                <!-- ACTIVITIES - Grande Card -->
+                <div class="card-acti">
+            
+                    <!-- ACTIVITIES - Titre -->
+                    <div class="card-title">
+                        <h1 class="main-h1">Activités à Marseille</h1>
+                    </div>
+
+                    <!-- ACTIVITIES - Container des petites cards -->
+                    <div class="acti-cards-wrapper">
+                        
+                        <!-- ACTIVITIES - CARD 1 -->
+                        <div class="main-cards acti-cards acti-cards-l" id="acti-cards-1">
+                            <a class="main-links acti-links" href="#">
+                                <div class="acti-content-container">
+                                    <!-- CARD IMAGE -->
+                                    <picture class="main-picture acti-picture acti-picture-l">
+                                        <source media="(max-width: 700px)" srcset="images/activites/1/mobile.jpg 1x">
+                                        <source media="(max-width: 950px)" srcset="images/activites/1/tablet.jpg 2x">
+                                        <img class="main-img" src="images/activites/1/desktop.jpg"  alt="Image Vieux Port">  
+                                    </picture> 
+                                    
+                                    <!-- CARD DESCRIPTION --> 
+                                    <div class="main-cards-content acti-content">
+                                        <p class="main-cards-title acti-titles">Vieux Port</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ACTIVITIES - CARD 2 -->
+                        <div class="main-cards acti-cards acti-cards-m" id="acti-cards-2">
+                            <a class="main-links acti-links" href="#">
+                                <div class="acti-content-container">
+                                    <!-- CARD IMAGE -->
+                                    <picture class="main-picture acti-picture acti-picture-m">
+                                        <source media="(max-width: 700px)" srcset="images/activites/2/mobile.jpg 1x">
+                                        <source media="(max-width: 950px)" srcset="images/activites/2/tablet.jpg 2x">
+                                        <img class="main-img" src="images/activites/2/desktop.jpg" alt="Image du Fort de Pomègues">
+                                    </picture>
+                        
+                                    <!-- CARD DESCRIPTION -->
+                                    <div class="main-cards-content acti-content">
+                                        <p class="main-cards-title acti-titles">Fort de Pomègues</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ACTIVITIES - CARD 3 -->
+                        <div class="main-cards acti-cards acti-cards-s" id="acti-cards-3">
+                            <a class="main-links acti-links" href="#">
+                                <div class="acti-content-container">
+                                    <!-- CARD IMAGE -->
+                                    <picture class="main-picture acti-picture acti-picture-s">
+                                        <source media="(max-width: 700px)" srcset="images/activites/3/mobile.jpg 1x">
+                                        <source media="(max-width: 950px)" srcset="images/activites/3/tablet.jpg 2x">
+                                        <img class="main-img" src="images/activites/3/desktop.jpg"  alt="Image des Îles du Frioul">  
+                                    </picture> 
+                                    
+                                    <!-- CARD DESCRIPTION --> 
+                                    <div class="main-cards-content acti-content">
+                                        <p class="main-cards-title acti-titles">Îles du Frioul</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ACTIVITIES - CARD 4 -->
+                        <div class="main-cards acti-cards acti-cards-l" id="acti-cards-4">
+                            <a class="main-links acti-links" href="#">
+                                <div class="acti-content-container">
+                                    <!-- CARD IMAGE -->
+                                    <picture class="main-picture acti-picture acti-picture-l">
+                                        <source media="(max-width: 700px)" srcset="images/activites/4/mobile.jpg 1x">
+                                        <source media="(max-width: 950px)" srcset="images/activites/4/tablet.jpg 2x">
+                                        <img class="main-img" src="images/activites/4/desktop.jpg"  alt="Image du Parc National des Calanques">  
+                                    </picture> 
+                                    
+                                    <!-- CARD DESCRIPTION --> 
+                                    <div class="main-cards-content acti-content">
+                                        <p class="main-cards-title acti-titles">Parc National des Calanques</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ACTIVITIES - CARD 5 -->
+                        <div class="main-cards acti-cards acti-cards-s" id="acti-cards-5">
+                            <a class="main-links acti-links" href="#">
+                                <div class="acti-content-container">
+                                    <!-- CARD IMAGE -->
+                                    <picture class="main-picture acti-picture acti-picture-s">
+                                        <source media="(max-width: 700px)" srcset="images/activites/5/mobile.jpg 1x">
+                                        <source media="(max-width: 950px)" srcset="images/activites/5/tablet.jpg 2x">
+                                        <img class="main-img" src="images/activites/5/desktop.jpg"  alt="Image de Notre-Dame-de-la-Garde">  
+                                    </picture> 
+                                    
+                                    <!-- CARD DESCRIPTION --> 
+                                    <div class="main-cards-content acti-content">
+                                        <p class="main-cards-title acti-titles">Notre-Dame-de-la-Garde</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ACTIVITIES - CARD 6 -->
+                        <div class="main-cards acti-cards acti-cards-m" id="acti-cards-6">
+                            <a class="main-links acti-links" href="#">
+                                <div class="acti-content-container">
+                                    <!-- CARD IMAGE -->
+                                    <picture class="main-picture acti-picture acti-picture-m">
+                                        <source media="(max-width: 700px)" srcset="images/activites/6/mobile.jpg 1x">
+                                        <source media="(max-width: 950px)" srcset="images/activites/6/tablet.jpg 2x">
+                                        <img class="main-img" src="images/activites/6/desktop.jpg"  alt="Image du Parc Longchamp">  
+                                    </picture> 
+                                    
+                                    <!-- CARD DESCRIPTION --> 
+                                    <div class="main-cards-content acti-content">
+                                        <p class="main-cards-title acti-titles">Parc Longchamp</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div> <!-- close acti-cards-wrapper -->
+
+                </div> <!-- close card-acti -->
+                
+            </div> <!-- close container acti -->
+
+        </main>
+
+
+
+
+        <!--SECTION 3 - FOOTER -->
+        <footer class="footer">
+
+            <!-- FOOTER - Container des sections -->
+            <div class="footer-container">
+
+                <!-- FOOTER - Section 1 -->
+                <div class="footer-section">
+
+                    <!-- FOOTER - Titres -->
+                    <p class="footer-title">A propos</p>
+                    <ul>
+                        <li><a class="footer-links" href="#">Fonctionnement du site</a></li>
+                        <li><a class="footer-links" href="#">Conditions générales de vente</a></li>
+                        <li><a class="footer-links" href="#">Données et confidentialité</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- FOOTER - Section 2 -->
+                <div class="footer-section">
+
+                    <!-- FOOTER - Titres -->
+                    <p class="footer-title">Nos hébergements</p>
+                    <ul>
+                        <li><a class="footer-links" href="#">Charte qualité</a></li>
+                        <li><a class="footer-links" href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- FOOTER - Section 3 -->
+                <div class="footer-section">
+
+                    <!-- FOOTER - Titres -->
+                    <p class="footer-title">Assistance</p>
+                    <ul>
+                        <li><a class="footer-links" href="#">Centre d'aide</a></li>
+                        <li><a class="footer-links" href="#">Nous contacter</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
+   

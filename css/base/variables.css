@@ -1,0 +1,155 @@
+    /********************************************/
+    /***************** VARIABLES ****************/
+    /********************************************/
+
+:root{
+
+    /*************************************/
+    /************* COULEURS **************/
+    /*************************************/
+    --clr-primary:    #0065FC;
+    --clr-secondary:  #DEEBFF;
+    --clr-background: #F2F2F2;
+    --clr-hover:      #BED8FE;
+    
+    --clr-stars: var(--clr-primary);
+    --clr-stars-grey: #d9d9d9;
+
+}
+
+
+    /************************************************************************/
+    /************************ SECTION 1 - HEADER SEARCH **********************/
+    /************************************************************************/
+
+:root{
+  
+    /***************************************/
+    /********* SEARCH - Searchbar **********/
+    /***************************************/
+    /**** Formules de calcul ****/
+    --width-fa-maps: calc(var(--fz-search) * 3.33);
+    --pad-fa-maps: calc(var(--fz-search) * 0.8);
+    --bdR-fa-maps: calc(var(--fz-search) / 2) 0 0 calc(var(--fz-search) / 2);
+    --size-fa: calc(var(--fz-search) * 1.1);
+    --hgt-s-form: calc(var(--fz-search) * 3);
+    --bdr-s-form: calc(var(--fz-search) * 0.13) solid var(--clr-background);
+    --bdR-s-form: calc(var(--fz-search) * 2/3);
+    --width-s-txt: calc(var(--fz-search) * 14);
+    --padL-s-txt: calc(var(--fz-search) * 2/3);
+    --pad-s-btn: calc(var(--fz-search) * 1.2);
+    --bdR-s-btn: calc(var(--fz-search) / 2);
+
+    /**** Base des variables modifiables ****/
+    --fz-search: 14px;
+
+
+
+    /*****************************************/
+    /*********** Search - FILTRES ************/
+    /*****************************************/
+    /**** Formules de calcul ****/
+    --delta-round: calc((var(--border-toggle) + 1px));          /** Décalage nécessaire du round = border + 1px en plus **/
+    --delta-round-base: calc((var(--delta-round) * (-1)));
+  
+    /** Font-size et height button **/
+    --height-button: calc(var(--fz-button) * 3);
+  
+    /** Largeur du texte du Button **/
+    --w-txt1: calc(var(--fz-button) * 5.9);
+    --w-txt2: calc(var(--fz-button) * 3.7);
+    --w-txt3: calc(var(--fz-button) * 5.8);
+    --w-txt4: calc(var(--fz-button) * 8.7);
+  
+    /** Largeur des toggle buttons => texte + round + espaces côtés texte **/
+    --w-toggle1: calc(var(--w-txt1) + var(--height-button) + var(--delta-toggle));
+    --w-toggle2: calc(var(--w-txt2) + var(--height-button) + var(--delta-toggle));
+    --w-toggle3: calc(var(--w-txt3) + var(--height-button) + var(--delta-toggle));
+    --w-toggle4: calc(var(--w-txt4) + var(--height-button) + var(--delta-toggle));
+  
+    /** Padding servant à l'aération du texte des buttons à gauche et droite **/
+    --pad-toogle-label: calc(var(--fz-button) * .73);
+  
+    /** ANIMATIONS **/
+    --trans-txt: translateX(calc((var(--height-button) - 10px) * (-1)));  /** Déplacement du texte de droite à gauche */
+    --trans-round1: translateX(calc(var(--w-toggle1) - var(--height-button) + var(--delta-round)));  /** Déplacement du round 1 **/
+    --trans-round2: translateX(calc(var(--w-toggle2) - var(--height-button) + var(--delta-round)));  /** Déplacement du round 2 **/
+    --trans-round3: translateX(calc(var(--w-toggle3) - var(--height-button) + var(--delta-round)));  /** Déplacement du round 3 **/
+    --trans-round4: translateX(calc(var(--w-toggle4) - var(--height-button) + var(--delta-round)));  /** Déplacement du round 4 **/
+
+
+
+    /**** Base des variables modifiables ****/
+    --border-toggle: 2px;
+    --delta-toggle: 20px;                                       /** Espace gauche droite texte **/
+    /** Font-size et height button **/
+    --fz-button: 15px;
+
+}
+    /************************************************************************/
+    /************************ SECTION 2 - MAIN **********************/
+    /************************************************************************/
+
+    /*************************************/
+    /******** FORMULES DE CALCUL *********/
+    /*************************************/
+  :root{
+    /** Calcul de la hauteur d'une petite card **/
+    --hgt-hp-img: calc(100% - var(--bdr-card) * 3 - var(--hgt-text));
+    --hgt-1-cards: calc(var(--bdr-card) * 3 + var(--hgt-text) + var(--hgt-img)); /* Height des petites cards = border*X + h-txt + h-img */
+
+
+    /** Calcul de la largeur des petites cards **/
+    --width-33: calc(33.33% - 3%);
+
+
+    /** Recalcul card type-2 **/
+    --bdR-img-t2: calc(var(--bdR-cards) * 0.9);                                /* Border-radius des image type-2 = 90% du bR de base */
+    --wid-pic-cd-t2: calc(100% - var(--maxW-content2));                        /* Width picture des cards type 2 */
+    --wid-pic-cd-t2-768: calc(100% - var(--maxW-content2-768));                /* Width picture des cards type 2 - mq-768px*/
+
+
+    /** Recalcul de la hauteur des cards type-3 **/
+    --hgt-cd-t3: calc(var(--hgt-card-pic-t3) + var(--hgt-card-cont-t3));       /* Height de la card = h-img + h-txt */
+    --hgt-cd-t3-l: calc(var(--hgt-card-pic-t3-L) + var(--hgt-card-cont-t3));
+    --hgt-cd-t3-m: calc(var(--hgt-card-pic-t3-M) + var(--hgt-card-cont-t3));
+    --hgt-cd-t3-s: calc(var(--hgt-card-pic-t3-S) + var(--hgt-card-cont-t3));
+
+
+
+    /*************************************************/
+    /******** BASE DES VARIABLES MODIFIABLES *********/
+    /*************************************************/
+
+    /******* FORMAT DES GRANDES CARDS *******/
+    --bdR-card-hp: 20px;                        /* Border-radius des Grandes Cards */
+    --clr-bg-main-cards: #F2F2F2;             /* Background-color des Grandes Cards */
+    --mgn-RL: 1.5%;                             /* Espace entre les Grandes Cards */
+    --w-cd-homes: 66.66%;                       /* Width de la Card Homes */
+    --w-cd-pop: 33.33%;                         /* Width de la Card Homes */
+
+
+    /******* FORMAT DES PETITES CARDS *******/
+    --bdr-card: 5px;                            /* Bordures des petites cards */
+    --hgt-img: 100px;                           /* Hauteur de l'image des petites cards */
+    --hgt-text: 65px;                           /* Hauteur du texte des petites cards */
+    
+    
+    /************** POPULAR *****************/
+    --bdR-cards: 20px;                          /* Border-radius des petites Cards */
+    --maxW-content2: 160px;                     /* Width du texte des Pop cards */
+    --maxW-content2-768: 160px;
+    --hgt-card-pic-t3-l: 150px;
+    --hgt-card-pic-t3-m: 150px;
+    --hgt-card-pic-t3-s: 150px;
+    
+
+    /******* ACTIVITIES - FORMAT DES PETITES CARDS *******/
+    --pad-hpa-ctt-3: 15px;         /* Décalage bordure-texte des Acti cards */
+    --hgt-card-cont-t3: 50px;      /* Height du texte des Acti cards */
+    --hgt-card-pic-t3: 200px;      /* Height de l'image des Acti cards standard */
+    --hgt-card-pic-t3-l: 350px;    /* Height de l'image des Acti cards taille L */
+    --hgt-card-pic-t3-m: 160px;    /* Height de l'image des Acti cards taille M */
+    --hgt-card-pic-t3-s: 115px;    /* Height de l'image des Acti cards taille S */
+
+}

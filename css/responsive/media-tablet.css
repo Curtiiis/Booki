@@ -1,0 +1,104 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+    /***************************************************************/
+    /****************** MEDIA QUERIES - 992px **********************/
+    /***************************************************************/
+
+@media screen and (max-width: 992px) {
+    
+/************************************************/
+/************* SECTION 1 - HEADER ***************/
+/************************************************/
+.header{
+    padding: 0 30px;
+}
+
+
+/************************************************/
+/************** SECTTION 2 - MAIN ***************/
+/************************************************/
+:root{
+    --hgt-card-pic-t3-L: 130px;
+    --hgt-card-pic-t3-M: 130px;
+    --hgt-card-pic-t3-S: 130px;
+}
+
+    /************* CONTAINER GENERAL **************/
+.container-hp{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.container-hp{
+    padding: 0 30px;
+}
+.container-acti{
+    padding: 20px 30px ;
+}
+
+    /************* GRANDES CARDS ************/
+.card-hp{
+    width: 100%;
+}
+.card-homes{
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+}
+.card-pop{
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 0 25px 0;
+}
+
+
+    /******** CONTAINER DES CARDS ********/
+.acti-cards-wrapper{
+    height: 470px;
+}
+.pop-cards-wrapper{-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row}
+.acti-content-container{
+    width: 100%;
+}
+
+
+    /************* FORMAT DE LA CARD *************/
+.acti-cards{
+    height: 200px;
+    width: 31%;
+    margin-bottom: 35px;
+}
+.pop-cards{
+    width: calc(33.33% - 15px);
+    margin: 0;
+}
+.homes-cards-img-2{-o-object-position: 50% 75%;object-position: 50% 75%}
+.homes-cards-img-3{-o-object-position: 50% 60%;object-position: 50% 60%}
+.homes-cards-img-4{-o-object-position: 50% 60%;object-position: 50% 60%}
+.homes-cards-img-5{-o-object-position: 50% 99%;object-position: 50% 99%}
+.homes-cards-img-6{-o-object-position: 50% 65%;object-position: 50% 65%}
+
+/***** PICTURE ET IMAGES DES PETITES CARDS *****/
+.acti-picture{
+    height: 150px;
+}
+
+
+
+/************************************************/
+/************* SECTION 3 - FOOTER ***************/
+/************************************************/
+
+.footer-container{
+    padding: 45px 30px;
+}
+
+} /*close mq-992px */
+    

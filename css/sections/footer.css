@@ -1,0 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+    /**********************************************/
+    /************* SECTION 3 - FOOTER *************/
+    /**********************************************/
+.footer{
+    background-color: var(--clr-background);
+}
+.footer-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 45px;
+}
+.footer-section{
+    width: 33%;
+}
+
+.footer-title{
+    margin-bottom: 10px;
+}

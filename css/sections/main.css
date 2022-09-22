@@ -1,0 +1,299 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+    /*********************************************************/
+    /******************* SECTION 2 - MAIN ********************/
+    /*********************************************************/
+    
+    /********* CONTAINERS - SECTION 2 ********/
+.container-hp,
+.container-acti{   
+    margin: 0 auto;
+    max-width: 1290px;
+    padding: 0 45px;
+}
+
+.container-hp{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.container-acti{
+    padding: 20px 45px;
+}
+
+    
+    /***************** MAIN - ICONES *******************/
+
+    /***** FONT AWESOME *****/
+.fa-star{
+    color: var(--clr-stars);
+}
+.star-grey{
+    color: var(--clr-stars-grey);
+}
+.fa-chart-line{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+
+
+    /**************** MAIN - GRANDES CARDS *************/
+.card-hp{
+    padding: 36px;
+    border-radius: var(--bdR-card-hp);
+    background-color: var(--clr-bg-main-cards);
+}
+.card-homes{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+    width: var(--w-cd-homes);
+    margin-right: var(--mgn-RL);
+}
+.card-pop{
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    width: var(--w-cd-pop);
+    margin-left: var(--mgn-RL);
+}   
+
+
+
+    /******************** MAIN - CONTENT *********************/
+
+/************* TITRE GRANDES CARDS *************/
+h1{
+    margin: 0 0 20px;
+}
+.card-pop-title{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/********* CONTAINER DES CARDS ***********/
+.hp-cards-wrapper{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.homes-cards-wrapper{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.pop-cards-wrapper{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.acti-cards-wrapper{
+    height: 430px; /**/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+}
+.acti-content-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+/**************** PETITES CARD ******************/
+
+/***** FORMAT DES PETITES CARDS *****/
+.main-cards{
+    position: relative;
+
+    width: 100%;     /* revoir */
+    height: 200px;   /* revoir */
+    margin-bottom: 25px;
+
+    border: var(--bdr-card) solid #fff;
+    border-radius: var(--bdR-cards);
+    -webkit-box-shadow: 0 0 10px #0003;
+            box-shadow: 0 0 10px #0003;
+    background-color: #fff;
+}
+.homes-cards{
+    width: var(--width-33); 
+    height: var(--hgt-1-cards);
+} 
+.main-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#acti-cards-1{-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1}
+#acti-cards-2{-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2}
+#acti-cards-3{-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3}
+#acti-cards-4{-webkit-box-ordinal-group: 5;-ms-flex-order: 4;order: 4}
+#acti-cards-5{-webkit-box-ordinal-group: 6;-ms-flex-order: 5;order: 5}
+#acti-cards-6{-webkit-box-ordinal-group: 7;-ms-flex-order: 6;order: 6}
+
+
+
+/***** PICTURE ET IMAGES DES PETITES CARDS *****/
+.main-picture{
+    height: var(--hgt-hp-img);
+}
+.pop-picture{
+    width: 40%;
+}
+.main-img{
+    width: 100%;
+    height: 100%;  
+    -o-object-fit: cover;  
+       object-fit: cover;
+    border-radius: var(--bdR-img-t2) var(--bdR-img-t2) 0 0;
+}
+
+
+/***** TEXTE DES PETITES CARDS *****/
+.main-cards-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    max-width: 210px;
+    height: var(--hgt-text);
+
+    padding: 10px 0 0 10px;
+}
+.main-cards-title,
+.main-prices{
+    margin-bottom: 10px;
+}
+
+.homes-titles,
+.acti-titles{
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.pop-titles{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+
+
+/**************************************************/
+/************** POP CARD - TYPE 2 *****************/
+/**************************************************/
+.pop-cards{
+    height: 130px;
+}
+.pop-links{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.pop-picture{
+    width: var(--wid-pic-cd-t2);
+    height: 100%;
+}
+.pop-img{
+    border-radius: var(--bdR-img-t2) 0 0 var(--bdR-img-t2);  
+}
+.pop-content{
+    height: 95%;
+    max-width: var(--maxW-content2); 
+}
+
+
+
+
+/**************************************************/
+/************** ACTI CARD - TYPE 3 ****************/
+/**************************************************/
+
+/************ TYPE 3 - Standard ************/
+.acti-cards{
+    width: 23%;
+    height: var(--hgt-cd-t3); 
+    border: none;
+}
+.acti-picture{
+    height: var(--hgt-card-pic-t3);   
+}
+.acti-content{
+    height: var(--hgt-card-cont-t3);   
+    padding: 0 0 0 var(--pad-hpa-ctt-3);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.acti-titles{
+    margin-bottom: 0;
+}
+
+/*************** TYPE 3 - L ****************/
+.acti-cards-l{height: var(--hgt-cd-t3-l)}
+.acti-picture-l{height: var(--hgt-card-pic-t3-l)}
+
+
+/*************** TYPE 3 - M ****************/
+.acti-cards-m{height: var(--hgt-cd-t3-m)}
+.acti-picture-m{height: var(--hgt-card-pic-t3-m)}
+
+
+/*************** TYPE 3 - S ****************/
+.acti-cards-s{height: var(--hgt-cd-t3-s)}
+.acti-picture-s{height: var(--hgt-card-pic-t3-s)}
+
+
+
